@@ -1,0 +1,265 @@
+2025-04-19 11:39:59,803 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.11.5, Platform: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.35
+2025-04-19 11:39:59,803 - DEBUG - connect
+2025-04-19 11:39:59,804 - DEBUG - __config
+2025-04-19 11:39:59,804 - INFO - Connecting to GLOBAL Snowflake domain
+2025-04-19 11:39:59,805 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-04-19 11:39:59,805 - DEBUG - use_numpy: False
+2025-04-19 11:39:59,806 - DEBUG - REST API object was created: DBCBFDX-PS53654.snowflakecomputing.com:443
+2025-04-19 11:39:59,806 - DEBUG - authenticate
+2025-04-19 11:39:59,807 - DEBUG - account=DBCBFDX-PS53654, user=1242sanjay, database=None, schema=None, warehouse=None, role=None, request_id=eba4c421-0f09-49e8-a05d-79cef83e83d4
+2025-04-19 11:39:59,807 - DEBUG - body['data']: {'CLIENT_APP_ID': 'PythonSnowpark', 'CLIENT_APP_VERSION': '1.30.0', 'SVN_REVISION': None, 'ACCOUNT_NAME': 'DBCBFDX-PS53654', 'LOGIN_NAME': '1242sanjay', 'CLIENT_ENVIRONMENT': {'APPLICATION': 'PythonSnowpark', 'OS': 'Linux', 'OS_VERSION': 'Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.35', 'PYTHON_VERSION': '3.11.5', 'PYTHON_RUNTIME': 'CPython', 'PYTHON_COMPILER': 'GCC 11.2.0', 'OCSP_MODE': 'FAIL_OPEN', 'TRACING': 10, 'LOGIN_TIMEOUT': None, 'NETWORK_TIMEOUT': None, 'SOCKET_TIMEOUT': None}, 'PASSWORD': '******', 'SESSION_PARAMETERS': {'CLIENT_PREFETCH_THREADS': 4}}
+2025-04-19 11:39:59,807 - DEBUG - Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2025-04-19 11:39:59,808 - DEBUG - Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2025-04-19 11:39:59,809 - DEBUG - Session status for SessionPool 'dbcbfdx-ps53654.snowflakecomputing.com', SessionPool 1/1 active sessions
+2025-04-19 11:39:59,809 - DEBUG - remaining request timeout: N/A ms, retry cnt: 1
+2025-04-19 11:39:59,810 - DEBUG - Request guid: 2725c41b-3c5e-47bf-9374-9e83ef73e63d
+2025-04-19 11:39:59,810 - DEBUG - socket timeout: 60
+2025-04-19 11:39:59,818 - DEBUG - Starting new HTTPS connection (1): dbcbfdx-ps53654.snowflakecomputing.com:443
+2025-04-19 11:40:00,272 - DEBUG - OCSP Mode: FAIL_OPEN, OCSP response cache file name: None
+2025-04-19 11:40:00,379 - DEBUG - cache directory: /root/.cache/snowflake
+2025-04-19 11:40:00,381 - DEBUG - ocsp_response_cache_uri: file:///root/.cache/snowflake/ocsp_response_cache.json
+2025-04-19 11:40:00,382 - DEBUG - OCSP_VALIDATION_CACHE size: 403
+2025-04-19 11:40:00,382 - DEBUG - OCSP response cache server is enabled: http://ocsp.snowflakecomputing.com/ocsp_response_cache.json
+2025-04-19 11:40:00,382 - DEBUG - OCSP dynamic cache server RETRY URL: None
+2025-04-19 11:40:00,383 - DEBUG - validating certificate: dbcbfdx-ps53654.snowflakecomputing.com
+2025-04-19 11:40:00,383 - DEBUG - # of certificates: 4
+2025-04-19 11:40:00,384 - DEBUG - subject: OrderedDict([('common_name', '*.ap-southeast-1.snowflakecomputing.com')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon RSA 2048 M03')])
+2025-04-19 11:40:00,385 - DEBUG - subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon RSA 2048 M03')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon Root CA 1')])
+2025-04-19 11:40:00,387 - DEBUG - subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon Root CA 1')]), issuer: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'Arizona'), ('locality_name', 'Scottsdale'), ('organization_name', 'Starfield Technologies, Inc.'), ('common_name', 'Starfield Services Root Certificate Authority - G2')])
+2025-04-19 11:40:00,387 - DEBUG - subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'Arizona'), ('locality_name', 'Scottsdale'), ('organization_name', 'Starfield Technologies, Inc.'), ('common_name', 'Starfield Services Root Certificate Authority - G2')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'Starfield Technologies, Inc.'), ('organizational_unit_name', 'Starfield Class 2 Certification Authority')])
+2025-04-19 11:40:00,394 - DEBUG - reading certificate bundle: /mnt/c/Users/1242s/Desktop/My_Learning/snowflake/snowpark/snowparkenv/lib/python3.11/site-packages/certifi/cacert.pem
+2025-04-19 11:40:00,422 - DEBUG - not found issuer_der: OrderedDict([('country_name', 'US'), ('organization_name', 'Starfield Technologies, Inc.'), ('organizational_unit_name', 'Starfield Class 2 Certification Authority')])
+2025-04-19 11:40:00,424 - DEBUG - hit cache for subject: OrderedDict([('common_name', '*.ap-southeast-1.snowflakecomputing.com')])
+2025-04-19 11:40:00,426 - DEBUG - Verifying the attached certificate is signed by the issuer. Valid Not After: 2026-07-22 00:00:00+00:00
+2025-04-19 11:40:00,427 - DEBUG - hit cache for subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon RSA 2048 M03')])
+2025-04-19 11:40:00,429 - DEBUG - Verifying the attached certificate is signed by the issuer. Valid Not After: 2026-07-22 00:00:00+00:00
+2025-04-19 11:40:00,430 - DEBUG - hit cache for subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon Root CA 1')])
+2025-04-19 11:40:00,432 - DEBUG - Verifying the attached certificate is signed by the issuer. Valid Not After: 2026-04-02 12:00:00+00:00
+2025-04-19 11:40:00,433 - DEBUG - hit cache for subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'Arizona'), ('locality_name', 'Scottsdale'), ('organization_name', 'Starfield Technologies, Inc.'), ('common_name', 'Starfield Services Root Certificate Authority - G2')])
+2025-04-19 11:40:00,435 - DEBUG - ok
+2025-04-19 11:40:00,675 - DEBUG - https://dbcbfdx-ps53654.snowflakecomputing.com:443 "POST /session/v1/login-request?request_id=eba4c421-0f09-49e8-a05d-79cef83e83d4&request_guid=2725c41b-3c5e-47bf-9374-9e83ef73e63d HTTP/1.1" 200 5990
+2025-04-19 11:40:00,676 - DEBUG - SUCCESS
+2025-04-19 11:40:00,677 - DEBUG - Session status for SessionPool 'dbcbfdx-ps53654.snowflakecomputing.com', SessionPool 0/1 active sessions
+2025-04-19 11:40:00,677 - DEBUG - ret[code] = None, after post request
+2025-04-19 11:40:00,678 - DEBUG - completed authentication
+2025-04-19 11:40:00,678 - DEBUG - token = ******
+2025-04-19 11:40:00,679 - DEBUG - master_token = ******
+2025-04-19 11:40:00,679 - DEBUG - id_token = NULL
+2025-04-19 11:40:00,680 - DEBUG - mfa_token = NULL
+2025-04-19 11:40:00,681 - DEBUG - cursor
+2025-04-19 11:40:00,682 - DEBUG - Setting AST state. Current state: ast_enabled = True, state = 1. Request: source = 2, enable = False.
+2025-04-19 11:40:00,683 - INFO - Snowpark Session information: 
+"version" : 1.30.0,
+"python.version" : 3.11.5,
+"python.connector.version" : 3.14.0,
+"python.connector.session.id" : 55590662765,
+"os.name" : Linux
+
+2025-04-19 11:40:00,752 - DEBUG - executing SQL/command
+2025-04-19 11:40:00,753 - DEBUG - query: [select * from demo.snowpark.customer_data_01]
+2025-04-19 11:40:00,753 - DEBUG - sequence counter: 1
+2025-04-19 11:40:00,753 - DEBUG - Request id: b944a801-99eb-41c1-99fc-8f6b1a9ba536
+2025-04-19 11:40:00,753 - DEBUG - running query [select * from demo.snowpark.customer_data_01]
+2025-04-19 11:40:00,754 - DEBUG - is_file_transfer: True
+2025-04-19 11:40:00,754 - DEBUG - _cmd_query
+2025-04-19 11:40:00,754 - DEBUG - serialize_to_dict() called
+2025-04-19 11:40:00,754 - DEBUG - sql=[select * from demo.snowpark.customer_data_01], sequence_id=[1], is_file_transfer=[False]
+2025-04-19 11:40:00,756 - DEBUG - Opentelemtry otel injection failed
+Traceback (most recent call last):
+  File "/mnt/c/Users/1242s/Desktop/My_Learning/snowflake/snowpark/snowparkenv/lib/python3.11/site-packages/snowflake/connector/network.py", line 489, in request
+    from opentelemetry.trace.propagation.tracecontext import (
+ModuleNotFoundError: No module named 'opentelemetry'
+2025-04-19 11:40:00,762 - DEBUG - Session status for SessionPool 'dbcbfdx-ps53654.snowflakecomputing.com', SessionPool 1/1 active sessions
+2025-04-19 11:40:00,762 - DEBUG - remaining request timeout: N/A ms, retry cnt: 1
+2025-04-19 11:40:00,762 - DEBUG - Request guid: 9b432464-59fb-4307-b190-b20d27d3437a
+2025-04-19 11:40:00,763 - DEBUG - socket timeout: 60
+2025-04-19 11:40:00,927 - DEBUG - https://dbcbfdx-ps53654.snowflakecomputing.com:443 "POST /queries/v1/query-request?requestId=b944a801-99eb-41c1-99fc-8f6b1a9ba536&request_guid=9b432464-59fb-4307-b190-b20d27d3437a HTTP/1.1" 200 None
+2025-04-19 11:40:00,928 - DEBUG - SUCCESS
+2025-04-19 11:40:00,929 - DEBUG - Session status for SessionPool 'dbcbfdx-ps53654.snowflakecomputing.com', SessionPool 0/1 active sessions
+2025-04-19 11:40:00,929 - DEBUG - ret[code] = None, after post request
+2025-04-19 11:40:00,930 - DEBUG - Query id: 01bbc992-3201-8dcf-0000-000cf1764799
+2025-04-19 11:40:00,931 - DEBUG - deserialize_json_dict() called: data from server: {'entries': [{'id': 0, 'timestamp': 1745043001627302, 'priority': 0, 'context': 'CL7uGA=='}]}
+2025-04-19 11:40:00,932 - DEBUG - deserialize {'id': 0, 'timestamp': 1745043001627302, 'priority': 0, 'context': 'CL7uGA=='}
+2025-04-19 11:40:00,932 - DEBUG - sync_priority_map called priority_map size = 0, new_priority_map size = 1
+2025-04-19 11:40:00,933 - DEBUG - trim_cache() called. treeSet size is 1 and cache capacity is 5
+2025-04-19 11:40:00,934 - DEBUG - trim_cache() returns. treeSet size is 1 and cache capacity is 5
+2025-04-19 11:40:00,934 - DEBUG - deserialize_json_dict() returns
+2025-04-19 11:40:00,935 - DEBUG - Cache Entry: (0, 1745043001627302, 0)
+2025-04-19 11:40:00,935 - DEBUG - sfqid: 01bbc992-3201-8dcf-0000-000cf1764799
+2025-04-19 11:40:00,936 - DEBUG - query execution done
+2025-04-19 11:40:00,936 - DEBUG - SUCCESS
+2025-04-19 11:40:00,937 - DEBUG - PUT OR GET: False
+2025-04-19 11:40:00,937 - DEBUG - Query result format: arrow
+2025-04-19 11:40:00,937 - DEBUG - Number of results in first chunk: 0
+2025-04-19 11:40:01,012 - DEBUG - executing SQL/command
+2025-04-19 11:40:01,012 - DEBUG - query: [SELECT  *  FROM (select * from demo.snowpark.customer_data_01) LIMIT 10]
+2025-04-19 11:40:01,013 - DEBUG - sequence counter: 2
+2025-04-19 11:40:01,014 - DEBUG - Request id: 2b774a5a-13af-4cb5-b273-d09385f6fb6b
+2025-04-19 11:40:01,014 - DEBUG - running query [SELECT  *  FROM (select * from demo.snowpark.customer_data_01) LIMIT 10]
+2025-04-19 11:40:01,015 - DEBUG - is_file_transfer: True
+2025-04-19 11:40:01,015 - DEBUG - _cmd_query
+2025-04-19 11:40:01,016 - DEBUG - serialize_to_dict() called
+2025-04-19 11:40:01,016 - DEBUG - Cache Entry: (0, 1745043001627302, 0)
+2025-04-19 11:40:01,016 - DEBUG - serialize_to_dict(): data to send to server {'entries': [{'id': 0, 'timestamp': 1745043001627302, 'priority': 0, 'context': {'base64Data': 'CL7uGA=='}}]}
+2025-04-19 11:40:01,017 - DEBUG - sql=[SELECT  *  FROM (select * from demo.snowpark.customer_data_01) LIMIT 10], sequence_id=[2], is_file_transfer=[False]
+2025-04-19 11:40:01,018 - DEBUG - Opentelemtry otel injection failed
+Traceback (most recent call last):
+  File "/mnt/c/Users/1242s/Desktop/My_Learning/snowflake/snowpark/snowparkenv/lib/python3.11/site-packages/snowflake/connector/network.py", line 489, in request
+    from opentelemetry.trace.propagation.tracecontext import (
+ModuleNotFoundError: No module named 'opentelemetry'
+2025-04-19 11:40:01,020 - DEBUG - Session status for SessionPool 'dbcbfdx-ps53654.snowflakecomputing.com', SessionPool 1/1 active sessions
+2025-04-19 11:40:01,020 - DEBUG - remaining request timeout: N/A ms, retry cnt: 1
+2025-04-19 11:40:01,021 - DEBUG - Request guid: f901de20-2a6e-4b3f-b959-cd4467d77892
+2025-04-19 11:40:01,021 - DEBUG - socket timeout: 60
+2025-04-19 11:40:01,240 - DEBUG - https://dbcbfdx-ps53654.snowflakecomputing.com:443 "POST /queries/v1/query-request?requestId=2b774a5a-13af-4cb5-b273-d09385f6fb6b&request_guid=f901de20-2a6e-4b3f-b959-cd4467d77892 HTTP/1.1" 200 None
+2025-04-19 11:40:01,242 - DEBUG - SUCCESS
+2025-04-19 11:40:01,242 - DEBUG - Session status for SessionPool 'dbcbfdx-ps53654.snowflakecomputing.com', SessionPool 0/1 active sessions
+2025-04-19 11:40:01,243 - DEBUG - ret[code] = None, after post request
+2025-04-19 11:40:01,243 - DEBUG - Query id: 01bbc992-3201-8ade-0000-000cf17675ad
+2025-04-19 11:40:01,244 - DEBUG - deserialize_json_dict() called: data from server: {'entries': [{'id': 0, 'timestamp': 1745043001940206, 'priority': 0, 'context': 'CPrWGA=='}]}
+2025-04-19 11:40:01,244 - DEBUG - Cache Entry: (0, 1745043001627302, 0)
+2025-04-19 11:40:01,245 - DEBUG - deserialize {'id': 0, 'timestamp': 1745043001940206, 'priority': 0, 'context': 'CPrWGA=='}
+2025-04-19 11:40:01,245 - DEBUG - sync_priority_map called priority_map size = 0, new_priority_map size = 1
+2025-04-19 11:40:01,246 - DEBUG - trim_cache() called. treeSet size is 1 and cache capacity is 5
+2025-04-19 11:40:01,246 - DEBUG - trim_cache() returns. treeSet size is 1 and cache capacity is 5
+2025-04-19 11:40:01,247 - DEBUG - deserialize_json_dict() returns
+2025-04-19 11:40:01,247 - DEBUG - Cache Entry: (0, 1745043001940206, 0)
+2025-04-19 11:40:01,248 - DEBUG - sfqid: 01bbc992-3201-8ade-0000-000cf17675ad
+2025-04-19 11:40:01,249 - DEBUG - query execution done
+2025-04-19 11:40:01,250 - DEBUG - SUCCESS
+2025-04-19 11:40:01,250 - DEBUG - PUT OR GET: False
+2025-04-19 11:40:01,251 - DEBUG - Query result format: arrow
+2025-04-19 11:40:01,251 - DEBUG - Number of results in first chunk: 10
+2025-04-19 11:40:01,252 - DEBUG - Execute query [queryID: 01bbc992-3201-8ade-0000-000cf17675ad]  SELECT  *  FROM (select * from demo.snowpark.customer_data_01) LIMIT 10
+2025-04-19 11:40:01,252 - DEBUG - Using nanoarrow as the arrow data converter
+2025-04-19 11:40:01,259 - DEBUG - Arrow BatchSize: 1
+2025-04-19 11:40:01,260 - DEBUG - Arrow chunk info: batchCount 1, columnCount 5, use_numpy: 0
+2025-04-19 11:40:01,260 - DEBUG - Batches read: 0
+2025-04-19 11:40:01,261 - DEBUG - beginning to schedule result batch downloads
+2025-04-19 11:40:01,261 - DEBUG - Current batch index: 0, rows in current batch: 10
+2025-04-19 11:40:01,265 - DEBUG - executing SQL/command
+2025-04-19 11:40:01,266 - DEBUG - query: [SELECT "CustomerID", "Name", "Email", "Age", "City", 'Single' AS "Marital Status...]
+2025-04-19 11:40:01,266 - DEBUG - sequence counter: 3
+2025-04-19 11:40:01,267 - DEBUG - Request id: 2d2f88a8-88ae-4b4f-ba50-3d3c7208de73
+2025-04-19 11:40:01,267 - DEBUG - running query [SELECT "CustomerID", "Name", "Email", "Age", "City", 'Single' AS "Marital Status...]
+2025-04-19 11:40:01,267 - DEBUG - is_file_transfer: True
+2025-04-19 11:40:01,268 - DEBUG - _cmd_query
+2025-04-19 11:40:01,268 - DEBUG - serialize_to_dict() called
+2025-04-19 11:40:01,269 - DEBUG - Cache Entry: (0, 1745043001940206, 0)
+2025-04-19 11:40:01,269 - DEBUG - serialize_to_dict(): data to send to server {'entries': [{'id': 0, 'timestamp': 1745043001940206, 'priority': 0, 'context': {'base64Data': 'CPrWGA=='}}]}
+2025-04-19 11:40:01,270 - DEBUG - sql=[SELECT "CustomerID", "Name", "Email", "Age", "City", 'Single' AS "Marital Status...], sequence_id=[3], is_file_transfer=[False]
+2025-04-19 11:40:01,270 - DEBUG - Opentelemtry otel injection failed
+Traceback (most recent call last):
+  File "/mnt/c/Users/1242s/Desktop/My_Learning/snowflake/snowpark/snowparkenv/lib/python3.11/site-packages/snowflake/connector/network.py", line 489, in request
+    from opentelemetry.trace.propagation.tracecontext import (
+ModuleNotFoundError: No module named 'opentelemetry'
+2025-04-19 11:40:01,272 - DEBUG - Session status for SessionPool 'dbcbfdx-ps53654.snowflakecomputing.com', SessionPool 1/1 active sessions
+2025-04-19 11:40:01,273 - DEBUG - remaining request timeout: N/A ms, retry cnt: 1
+2025-04-19 11:40:01,273 - DEBUG - Request guid: bf96e296-5a0a-4623-924b-74a2eed81ade
+2025-04-19 11:40:01,273 - DEBUG - socket timeout: 60
+2025-04-19 11:40:01,439 - DEBUG - https://dbcbfdx-ps53654.snowflakecomputing.com:443 "POST /queries/v1/query-request?requestId=2d2f88a8-88ae-4b4f-ba50-3d3c7208de73&request_guid=bf96e296-5a0a-4623-924b-74a2eed81ade HTTP/1.1" 200 None
+2025-04-19 11:40:01,440 - DEBUG - SUCCESS
+2025-04-19 11:40:01,441 - DEBUG - Session status for SessionPool 'dbcbfdx-ps53654.snowflakecomputing.com', SessionPool 0/1 active sessions
+2025-04-19 11:40:01,441 - DEBUG - ret[code] = None, after post request
+2025-04-19 11:40:01,442 - DEBUG - Query id: 01bbc992-3201-8dbd-0000-000cf1766505
+2025-04-19 11:40:01,442 - DEBUG - deserialize_json_dict() called: data from server: {'entries': [{'id': 0, 'timestamp': 1745043002142610, 'priority': 0, 'context': 'CPbtGA=='}]}
+2025-04-19 11:40:01,443 - DEBUG - Cache Entry: (0, 1745043001940206, 0)
+2025-04-19 11:40:01,443 - DEBUG - deserialize {'id': 0, 'timestamp': 1745043002142610, 'priority': 0, 'context': 'CPbtGA=='}
+2025-04-19 11:40:01,443 - DEBUG - sync_priority_map called priority_map size = 0, new_priority_map size = 1
+2025-04-19 11:40:01,444 - DEBUG - trim_cache() called. treeSet size is 1 and cache capacity is 5
+2025-04-19 11:40:01,444 - DEBUG - trim_cache() returns. treeSet size is 1 and cache capacity is 5
+2025-04-19 11:40:01,445 - DEBUG - deserialize_json_dict() returns
+2025-04-19 11:40:01,445 - DEBUG - Cache Entry: (0, 1745043002142610, 0)
+2025-04-19 11:40:01,446 - DEBUG - sfqid: 01bbc992-3201-8dbd-0000-000cf1766505
+2025-04-19 11:40:01,446 - DEBUG - query execution done
+2025-04-19 11:40:01,447 - DEBUG - SUCCESS
+2025-04-19 11:40:01,448 - DEBUG - PUT OR GET: False
+2025-04-19 11:40:01,448 - DEBUG - Query result format: arrow
+2025-04-19 11:40:01,448 - DEBUG - Number of results in first chunk: 3
+2025-04-19 11:40:01,449 - DEBUG - Execute query [queryID: 01bbc992-3201-8dbd-0000-000cf1766505]  SELECT "CustomerID", "Name", "Email", "Age", "City", 'Single' AS "Marital Status" FROM (select * from demo.snowpark.customer_data_01) WHERE ("Age" < 30) LIMIT 10
+2025-04-19 11:40:01,449 - DEBUG - Using nanoarrow as the arrow data converter
+2025-04-19 11:40:01,449 - DEBUG - Arrow BatchSize: 1
+2025-04-19 11:40:01,450 - DEBUG - Arrow chunk info: batchCount 1, columnCount 6, use_numpy: 0
+2025-04-19 11:40:01,450 - DEBUG - Batches read: 0
+2025-04-19 11:40:01,451 - DEBUG - beginning to schedule result batch downloads
+2025-04-19 11:40:01,451 - DEBUG - Current batch index: 0, rows in current batch: 3
+2025-04-19 11:40:01,452 - INFO - Closing session: 55590662765
+2025-04-19 11:40:01,452 - INFO - Canceling all running queries
+2025-04-19 11:40:01,452 - DEBUG - executing SQL/command
+2025-04-19 11:40:01,453 - DEBUG - query: [select system$cancel_all_queries(55590662765)]
+2025-04-19 11:40:01,453 - DEBUG - sequence counter: 4
+2025-04-19 11:40:01,453 - DEBUG - Request id: 79003d5b-26c0-42a5-b2cc-d391d64faaef
+2025-04-19 11:40:01,453 - DEBUG - running query [select system$cancel_all_queries(55590662765)]
+2025-04-19 11:40:01,454 - DEBUG - is_file_transfer: True
+2025-04-19 11:40:01,454 - DEBUG - _cmd_query
+2025-04-19 11:40:01,454 - DEBUG - serialize_to_dict() called
+2025-04-19 11:40:01,455 - DEBUG - Cache Entry: (0, 1745043002142610, 0)
+2025-04-19 11:40:01,455 - DEBUG - serialize_to_dict(): data to send to server {'entries': [{'id': 0, 'timestamp': 1745043002142610, 'priority': 0, 'context': {'base64Data': 'CPbtGA=='}}]}
+2025-04-19 11:40:01,455 - DEBUG - sql=[select system$cancel_all_queries(55590662765)], sequence_id=[4], is_file_transfer=[False]
+2025-04-19 11:40:01,457 - DEBUG - Opentelemtry otel injection failed
+Traceback (most recent call last):
+  File "/mnt/c/Users/1242s/Desktop/My_Learning/snowflake/snowpark/snowparkenv/lib/python3.11/site-packages/snowflake/connector/network.py", line 489, in request
+    from opentelemetry.trace.propagation.tracecontext import (
+ModuleNotFoundError: No module named 'opentelemetry'
+2025-04-19 11:40:01,459 - DEBUG - Session status for SessionPool 'dbcbfdx-ps53654.snowflakecomputing.com', SessionPool 1/1 active sessions
+2025-04-19 11:40:01,459 - DEBUG - remaining request timeout: N/A ms, retry cnt: 1
+2025-04-19 11:40:01,460 - DEBUG - Request guid: 13c34978-36b3-4201-b7b2-0640856032a9
+2025-04-19 11:40:01,460 - DEBUG - socket timeout: 60
+2025-04-19 11:40:01,621 - DEBUG - https://dbcbfdx-ps53654.snowflakecomputing.com:443 "POST /queries/v1/query-request?requestId=79003d5b-26c0-42a5-b2cc-d391d64faaef&request_guid=13c34978-36b3-4201-b7b2-0640856032a9 HTTP/1.1" 200 None
+2025-04-19 11:40:01,623 - DEBUG - SUCCESS
+2025-04-19 11:40:01,623 - DEBUG - Session status for SessionPool 'dbcbfdx-ps53654.snowflakecomputing.com', SessionPool 0/1 active sessions
+2025-04-19 11:40:01,624 - DEBUG - ret[code] = None, after post request
+2025-04-19 11:40:01,625 - DEBUG - Query id: 01bbc992-3201-8f10-0000-000cf176b155
+2025-04-19 11:40:01,625 - DEBUG - deserialize_json_dict() called: data from server: {'entries': [{'id': 0, 'timestamp': 1745043002320734, 'priority': 0, 'context': 'CML4GA=='}]}
+2025-04-19 11:40:01,626 - DEBUG - Cache Entry: (0, 1745043002142610, 0)
+2025-04-19 11:40:01,626 - DEBUG - deserialize {'id': 0, 'timestamp': 1745043002320734, 'priority': 0, 'context': 'CML4GA=='}
+2025-04-19 11:40:01,626 - DEBUG - sync_priority_map called priority_map size = 0, new_priority_map size = 1
+2025-04-19 11:40:01,627 - DEBUG - trim_cache() called. treeSet size is 1 and cache capacity is 5
+2025-04-19 11:40:01,627 - DEBUG - trim_cache() returns. treeSet size is 1 and cache capacity is 5
+2025-04-19 11:40:01,628 - DEBUG - deserialize_json_dict() returns
+2025-04-19 11:40:01,628 - DEBUG - Cache Entry: (0, 1745043002320734, 0)
+2025-04-19 11:40:01,628 - DEBUG - sfqid: 01bbc992-3201-8f10-0000-000cf176b155
+2025-04-19 11:40:01,629 - DEBUG - query execution done
+2025-04-19 11:40:01,629 - DEBUG - SUCCESS
+2025-04-19 11:40:01,630 - DEBUG - PUT OR GET: False
+2025-04-19 11:40:01,631 - DEBUG - Query result format: arrow
+2025-04-19 11:40:01,631 - DEBUG - Number of results in first chunk: 1
+2025-04-19 11:40:01,632 - DEBUG - Execute query [queryID: 01bbc992-3201-8f10-0000-000cf176b155] select system$cancel_all_queries(55590662765)
+2025-04-19 11:40:01,632 - DEBUG - Using nanoarrow as the arrow data converter
+2025-04-19 11:40:01,633 - DEBUG - Arrow BatchSize: 1
+2025-04-19 11:40:01,633 - DEBUG - Arrow chunk info: batchCount 1, columnCount 1, use_numpy: 0
+2025-04-19 11:40:01,633 - DEBUG - Batches read: 0
+2025-04-19 11:40:01,634 - DEBUG - beginning to schedule result batch downloads
+2025-04-19 11:40:01,634 - DEBUG - Current batch index: 0, rows in current batch: 1
+2025-04-19 11:40:01,634 - INFO - closed
+2025-04-19 11:40:01,635 - DEBUG - Closing telemetry client.
+2025-04-19 11:40:01,638 - DEBUG - Sending 1 logs to telemetry. Data is {'logs': [{'message': {'driver_type': 'PythonConnector', 'driver_version': '3.14.0', 'source': 'PythonSnowpark', 'type': 'client_imported_packages', 'value': "{'csv', 'time', 'pytz', 'marshal', 'subprocess', 'snowflake', 're', 'pkg_resources', 'multiprocessing', 'concurrent', 'tempfile', 'six', 'enum', 'platformdirs', 'fnmatch', 'argparse', 'email', 'charset_normalizer', 'unittest', 'dateutil', 'locale', 'pkgutil', 'cryptography', 'site', 'tomlkit', 'typing_extensions', 'tokenize', 'atexit', 'certifi', 'hashlib', 'socket', 'filelock', 'signal', 'packaging', 'typing', 'urllib', 'zoneinfo', 'contextvars', 'linecache', 'urllib3', 'glob', 'jwt', 'hmac', 'ctypes', 'configparser', 'copyreg', 'os', 'asyncio', 'shutil', 'builtins', 'contextlib', 'webbrowser', 'itertools', 'copy', 'warnings', 'sysconfig', 'uuid', 'idna', 'array', 'operator', 'encodings', 'pathlib', 'html', 'cython_runtime', 'opcode', 'zipfile', 'ssl', 'pickle', 'mimetypes', 'selectors', 'textwrap', 'calendar', 'genericpath', 'heapq', 'zipimport', 'numbers', 'google', 'io', 'plistlib', 'lzma', 'xml', 'binascii', 'stat', 'fcntl', 'fractions', 'json', 'math', 'posixpath', 'zlib', 'ntpath', 'errno', 'bisect', 'bz2', 'stringprep', 'collections', 'sys', 'snowpark02_basic_auth', 'codecs', 'datetime', 'posix', 'traceback', 'threading', 'queue', 'asn1crypto', 'token', 'weakref', 'reprlib', 'ipaddress', 'requests', 'decimal', 'OpenSSL', 'sortedcontainers', 'string', 'inspect', 'secrets', 'functools', 'struct', 'dataclasses', 'difflib', 'platform', 'quopri', 'gettext', 'random', 'dis', 'yaml', 'ast', 'select', 'pyexpat', 'types', 'shlex', 'base64', 'gzip', 'pprint', 'importlib', 'statistics', 'unicodedata', 'cloudpickle', 'tzlocal', 'logging', 'http', 'abc', 'keyword'}"}, 'timestamp': '1745043000681'}, {'message': {'source': 'PythonSnowpark', 'version': '1.30.0', 'python_version': '3.11.5', 'operating_system': 'Linux', 'type': 'snowpark_session_created', 'interactive': 0, 'data': {'start_time': 1745043000681, 'created_by_snowpark': 1}}, 'timestamp': '1745043000681'}, {'message': {'source': 'PythonSnowpark', 'version': '1.30.0', 'python_version': '3.11.5', 'operating_system': 'Linux', 'type': 'snowpark_cursor_created', 'interactive': 0, 'data': {'session_id': 55590662765, 'thread_ident': 140454225855552}}, 'timestamp': '1745043000682'}, {'message': {'driver_type': 'PythonConnector', 'driver_version': '3.14.0', 'source': 'PythonSnowpark', 'type': 'client_time_consume_first_result', 'query_id': '01bbc992-3201-8dcf-0000-000cf1764799', 'value': -697}, 'timestamp': '1745043000936'}, {'message': {'source': 'PythonSnowpark', 'version': '1.30.0', 'python_version': '3.11.5', 'operating_system': 'Linux', 'type': 'snowpark_describe_query_details', 'interactive': 0, 'data': {'session_id': 55590662765, 'sql_text': 'select * from demo.snowpark.customer_data_01', 'e2e_time': 0.1856832504272461, 'stack_trace': ['cust_below_30 = cust_df.filter(col(\'"Age"\') < 30)', 'r = func(*args, **kwargs)', 'return func(*args, **kwargs)', 'self._select_statement.filter(filter_col_expr),', 'derive_dependent_columns(col), self.column_states', 'self.column_states = self.from_.column_states', 'column_attrs = self.snowflake_plan.attributes', 'attributes = analyze_attributes(self.schema_query, self.session)']}}, 'timestamp': '1745043000938'}, {'message': {'source': 'PythonSnowpark', 'version': '1.30.0', 'python_version': '3.11.5', 'operating_system': 'Linux', 'type': 'snowpark_compilation_stage_statistics', 'interactive': 0, 'data': {'session_id': 55590662765, 'category': 'query_compilation_stage_statistics', 'plan_uuid': '87fbf333-5a23-47bf-a754-632708e03e63', 'cte_optimization_enabled': True, 'large_query_breakdown_enabled': False, 'complexity_score_bounds': (10000000, 12000000), 'time_taken_for_compilation_sec': 0.0014109611511230469, 'time_taken_for_deep_copy_plan_sec': 0.0011000633239746094, 'time_taken_for_cte_optimization_sec': 0.0002524852752685547, 'time_taken_for_large_query_breakdown_sec': 9.5367431640625e-06, 'complexity_score_before_compilation': 2, 'complexity_score_after_cte_optimization': [2], 'complexity_score_after_large_query_breakdown': [2], 'breakdown_summary': {}, 'query_breakdown_optimization_skipped_reason': {}, 'cte_node_created': 0}}, 'timestamp': '1745043001012'}, {'message': {'driver_type': 'PythonConnector', 'driver_version': '3.14.0', 'source': 'PythonSnowpark', 'type': 'client_time_consume_first_result', 'query_id': '01bbc992-3201-8ade-0000-000cf17675ad', 'value': -696}, 'timestamp': '1745043001250'}, {'message': {'driver_type': 'PythonConnector', 'driver_version': '3.14.0', 'source': 'PythonSnowpark', 'type': 'client_time_consume_last_result', 'query_id': '01bbc992-3201-8ade-0000-000cf17675ad', 'value': 13}, 'timestamp': '1745043001262'}, {'message': {'source': 'PythonSnowpark', 'version': '1.30.0', 'python_version': '3.11.5', 'operating_system': 'Linux', 'type': 'snowpark_compilation_stage_statistics', 'interactive': 0, 'data': {'session_id': 55590662765, 'category': 'snowflake_plan_metrics', 'plan_uuid': '87fbf333-5a23-47bf-a754-632708e03e63', 'query_plan_height': 2, 'query_plan_num_selects_with_complexity_merged': 0, 'query_plan_num_duplicate_nodes': 0, 'query_plan_duplicated_node_complexity_distribution': [0, 0, 0, 0, 0, 0, 0], 'query_plan_complexity': {'low_impact': 1, 'column': 1}, 'complexity_score_before_compilation': 2}}, 'timestamp': '1745043001262'}, {'message': {'source': 'PythonSnowpark', 'version': '1.30.0', 'python_version': '3.11.5', 'operating_system': 'Linux', 'type': 'snowpark_function_usage', 'interactive': 0, 'data': {'func_name': 'action_show', 'category': 'action', 'api_calls': [{'name': 'Session.sql', 'sql_simplifier_enabled': True, 'thread_ident': 140454225855552}, {'name': 'DataFrame.show', 'wall_time': 0.3228580951690674, 'cpu_time': 0.022845299999999957}], 'sfqids': ['01bbc992-3201-8ade-0000-000cf17675ad']}}, 'timestamp': '1745043001262'}, {'message': {'source': 'PythonSnowpark', 'version': '1.30.0', 'python_version': '3.11.5', 'operating_system': 'Linux', 'type': 'snowpark_compilation_stage_statistics', 'interactive': 0, 'data': {'session_id': 55590662765, 'category': 'query_compilation_stage_statistics', 'plan_uuid': '7e8b7186-cdd1-47b6-af17-6a6fcc77f457', 'cte_optimization_enabled': True, 'large_query_breakdown_enabled': False, 'complexity_score_bounds': (10000000, 12000000), 'time_taken_for_compilation_sec': 0.0017719268798828125, 'time_taken_for_deep_copy_plan_sec': 0.0014278888702392578, 'time_taken_for_cte_optimization_sec': 0.0002951622009277344, 'time_taken_for_large_query_breakdown_sec': 1.2636184692382812e-05, 'complexity_score_before_compilation': 12, 'complexity_score_after_cte_optimization': [12], 'complexity_score_after_large_query_breakdown': [12], 'breakdown_summary': {}, 'query_breakdown_optimization_skipped_reason': {}, 'cte_node_created': 0}}, 'timestamp': '1745043001265'}, {'message': {'driver_type': 'PythonConnector', 'driver_version': '3.14.0', 'source': 'PythonSnowpark', 'type': 'client_time_consume_first_result', 'query_id': '01bbc992-3201-8dbd-0000-000cf1766505', 'value': -699}, 'timestamp': '1745043001447'}, {'message': {'driver_type': 'PythonConnector', 'driver_version': '3.14.0', 'source': 'PythonSnowpark', 'type': 'client_time_consume_last_result', 'query_id': '01bbc992-3201-8dbd-0000-000cf1766505', 'value': 4}, 'timestamp': '1745043001451'}, {'message': {'source': 'PythonSnowpark', 'version': '1.30.0', 'python_version': '3.11.5', 'operating_system': 'Linux', 'type': 'snowpark_compilation_stage_statistics', 'interactive': 0, 'data': {'session_id': 55590662765, 'category': 'snowflake_plan_metrics', 'plan_uuid': '7e8b7186-cdd1-47b6-af17-6a6fcc77f457', 'query_plan_height': 2, 'query_plan_num_selects_with_complexity_merged': 0, 'query_plan_num_duplicate_nodes': 0, 'query_plan_duplicated_node_complexity_distribution': [0, 0, 0, 0, 0, 0, 0], 'query_plan_complexity': {'column': 7, 'literal': 2, 'filter': 1, 'low_impact': 2}, 'complexity_score_before_compilation': 12}}, 'timestamp': '1745043001451'}, {'message': {'source': 'PythonSnowpark', 'version': '1.30.0', 'python_version': '3.11.5', 'operating_system': 'Linux', 'type': 'snowpark_function_usage', 'interactive': 0, 'data': {'func_name': 'action_show', 'category': 'action', 'api_calls': [{'name': 'Session.sql', 'sql_simplifier_enabled': True, 'thread_ident': 140454225855552}, {'name': 'DataFrame.filter', 'wall_time': 0.25481128692626953, 'cpu_time': 0.02013149999999997}, {'name': 'DataFrame.with_column', 'subcalls': [{'name': 'DataFrame.with_columns', 'subcalls': [{'name': 'DataFrame.select', 'wall_time': 0.0006809234619140625, 'cpu_time': 0.0006825999999999777}], 'wall_time': 0.0007395744323730469, 'cpu_time': 0.0007394000000000567}], 'wall_time': 0.0007534027099609375, 'cpu_time': 0.0007531999999998984}, {'name': 'DataFrame.show', 'wall_time': 0.18901419639587402, 'cpu_time': 0.012608300000000128}], 'sfqids': ['01bbc992-3201-8dbd-0000-000cf1766505']}}, 'timestamp': '1745043001452'}, {'message': {'driver_type': 'PythonConnector', 'driver_version': '3.14.0', 'source': 'PythonSnowpark', 'type': 'client_time_consume_first_result', 'query_id': '01bbc992-3201-8f10-0000-000cf176b155', 'value': -697}, 'timestamp': '1745043001629'}, {'message': {'driver_type': 'PythonConnector', 'driver_version': '3.14.0', 'source': 'PythonSnowpark', 'type': 'client_time_consume_last_result', 'query_id': '01bbc992-3201-8f10-0000-000cf176b155', 'value': 5}, 'timestamp': '1745043001634'}, {'message': {'source': 'PythonSnowpark', 'version': '1.30.0', 'python_version': '3.11.5', 'operating_system': 'Linux', 'type': 'snowpark_temp_table_cleanup', 'interactive': 0, 'data': {'session_id': 55590662765, 'temp_table_cleaner_enabled': False, 'num_temp_tables_cleaned': 0, 'num_temp_tables_created': 0}}, 'timestamp': '1745043001634'}]}.
+2025-04-19 11:40:01,639 - DEBUG - Opentelemtry otel injection failed
+Traceback (most recent call last):
+  File "/mnt/c/Users/1242s/Desktop/My_Learning/snowflake/snowpark/snowparkenv/lib/python3.11/site-packages/snowflake/connector/network.py", line 489, in request
+    from opentelemetry.trace.propagation.tracecontext import (
+ModuleNotFoundError: No module named 'opentelemetry'
+2025-04-19 11:40:01,641 - DEBUG - Session status for SessionPool 'dbcbfdx-ps53654.snowflakecomputing.com', SessionPool 1/1 active sessions
+2025-04-19 11:40:01,642 - DEBUG - remaining request timeout: 5000 ms, retry cnt: 1
+2025-04-19 11:40:01,642 - DEBUG - Request guid: e643413b-41d2-4b99-be74-d32bf606d29a
+2025-04-19 11:40:01,642 - DEBUG - socket timeout: 60
+2025-04-19 11:40:01,767 - DEBUG - https://dbcbfdx-ps53654.snowflakecomputing.com:443 "POST /telemetry/send?request_guid=e643413b-41d2-4b99-be74-d32bf606d29a HTTP/1.1" 200 None
+2025-04-19 11:40:01,768 - DEBUG - SUCCESS
+2025-04-19 11:40:01,768 - DEBUG - Session status for SessionPool 'dbcbfdx-ps53654.snowflakecomputing.com', SessionPool 0/1 active sessions
+2025-04-19 11:40:01,769 - DEBUG - ret[code] = None, after post request
+2025-04-19 11:40:01,770 - DEBUG - Successfully uploading metrics to telemetry.
+2025-04-19 11:40:01,770 - INFO - No async queries seem to be running, deleting session
+2025-04-19 11:40:01,771 - DEBUG - Session status for SessionPool 'dbcbfdx-ps53654.snowflakecomputing.com', SessionPool 1/1 active sessions
+2025-04-19 11:40:01,771 - DEBUG - remaining request timeout: 5000 ms, retry cnt: 1
+2025-04-19 11:40:01,772 - DEBUG - Request guid: 177162ae-299b-4fc6-9716-f45bd6f24950
+2025-04-19 11:40:01,772 - DEBUG - socket timeout: 60
+2025-04-19 11:40:01,901 - DEBUG - https://dbcbfdx-ps53654.snowflakecomputing.com:443 "POST /session?delete=true&request_guid=177162ae-299b-4fc6-9716-f45bd6f24950 HTTP/1.1" 200 None
+2025-04-19 11:40:01,902 - DEBUG - SUCCESS
+2025-04-19 11:40:01,903 - DEBUG - Session status for SessionPool 'dbcbfdx-ps53654.snowflakecomputing.com', SessionPool 0/1 active sessions
+2025-04-19 11:40:01,904 - DEBUG - ret[code] = None, after post request
+2025-04-19 11:40:01,905 - DEBUG - clear_cache() called
+2025-04-19 11:40:01,906 - DEBUG - Session is closed
+2025-04-19 11:40:01,906 - INFO - Closed session: 55590662765
+2025-04-19 11:40:01,907 - DEBUG - No-op because session 55590662765 had been previously closed.
+2025-04-19 11:40:01,908 - DEBUG - Rest object has been destroyed, cannot close session
+2025-04-19 11:40:01,908 - INFO - Closed session: 55590662765

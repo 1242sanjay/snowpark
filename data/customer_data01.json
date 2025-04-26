@@ -1,0 +1,70 @@
+{
+    "CustomerID":1,
+    "Name":"Sanjay Gupta",
+    "Email":"sanjay@example.com",
+    "Age":35,
+    "City":"Lucknow"
+}
+{
+    "CustomerID":2,
+    "Name":"Priya Sharma",
+    "Email":"priya@example.com",
+    "Age":29,
+    "City":"Delhi"
+}
+{
+    "CustomerID":3,
+    "Name":"Amit Mehra",
+    "Email":"amit@example.com",
+    "Age":42,
+    "City":"Mumbai"
+}
+{
+    "CustomerID":4,
+    "Name":"Rhea Kapoor",
+    "Email":"rhea@example.com",
+    "Age":31,
+    "City":"Bangalore"
+}
+{
+    "CustomerID":5,
+    "Name":"Ankit Saxena",
+    "Email":"ankit@example.com",
+    "Age":27,
+    "City":"Pune"
+}
+{
+    "CustomerID":6,
+    "Name":"Simran Kaur",
+    "Email":"simran@example.com",
+    "Age":33,
+    "City":"Chandigarh"
+}
+{
+    "CustomerID":7,
+    "Name":"Aditya Verma",
+    "Email":"aditya@example.com",
+    "Age":40,
+    "City":"Hyderabad"
+}
+{
+    "CustomerID":8,
+    "Name":"Nisha Rao",
+    "Email":"nisha@example.com",
+    "Age":25,
+    "City":"Jaipur"
+}
+{
+    "CustomerID":9,
+    "Name":"Vivek Nair",
+    "Email":"vivek@example.com",
+    "Age":37,
+    "City":"Kochi"
+}
+{
+    "CustomerID":10,
+    "Name":"Kavya Menon",
+    "Email":"kavya@example.com",
+    "Age":30,
+    "City":"Chennai"
+}
